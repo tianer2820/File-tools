@@ -1,3 +1,8 @@
+"""
+convert folder file name style.
+from 2019 8 5 to 2019-08-05
+"""
+
 import os
 import re
 
