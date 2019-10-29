@@ -2,7 +2,7 @@
 
 """
 This helps you to put all files in folders by their last modification time.
-This put files in folders like "2019 01" or "2003 09"...
+This put files in folders like "2019-01" or "2003-09"...
 """
 
 import os
@@ -20,7 +20,7 @@ for f in files:
         continue
     stat = os.stat(cwd + sep + f)
     dt = datetime.datetime.fromtimestamp(stat.st_mtime)
-    folder_name = '{:0>4d} {:0>2d}'.format(dt.year, dt.month)
+    folder_name = '{:0>4d}-{:0>2d}'.format(dt.year, dt.month)
     if os.path.isdir(cwd + sep + folder_name):
         os.rename(cwd + sep + f, cwd + sep + folder_name + sep + f)
     elif os.path.isfile(cwd + sep + folder_name):
