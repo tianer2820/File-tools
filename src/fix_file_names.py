@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 
 """
-This help you fix downloaded file names.
-In linux and mac, downloaded file names can be 'raw', all chars are replaced by '%something'
+In linux and mac, downloaded file names can be like %12%34%56, this program decode it with utf8
 """
 
 import os

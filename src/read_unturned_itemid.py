@@ -1,3 +1,7 @@
+"""
+Read item list from game Unturned. Not useful if you don't play Unturned.
+"""
+
 import os
 from typing import Dict
 import argparse

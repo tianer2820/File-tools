@@ -1,3 +1,8 @@
+"""
+Put files into folders based on their names.
+This is currently used only for videos, named like video_20191023somethings.mp4
+"""
+
 import os
 
 cwd = os.getcwd()
