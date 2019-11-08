@@ -13,6 +13,12 @@ import shutil
 def get_abs_path(cwd, filename):
     return cwd + os.sep + filename
 
+ans = input("rename all files here?[Y/N]:")
+if ans.lower() == 'y':
+    pass
+else:
+    print("stoped")
+    exit(0)
 
 cwd = os.getcwd()
 all_list = os.listdir(cwd)
@@ -36,5 +42,4 @@ for i in range(length):
     else:
         extension = ''
     name = "{:0>4d}{}".format(i, extension)
-    print(name)
     os.rename(target_files[i], newfolder + os.sep + name)
